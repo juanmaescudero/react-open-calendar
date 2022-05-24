@@ -1,0 +1,25 @@
+{
+  "name": "react-open-calendar",
+  "version": "0.0.2",
+  "description": "React calendar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanmaescudero/react-open-calendar.git"
+  },
+  "keywords": [
+    "react calendar",
+    "calendar",
+    "reactjs calendar",
+    "open calendar"
+  ],
+  "author": "Juanma Escudero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juanmaescudero/react-open-calendar/issues"
+  },
+  "homepage": "https://github.com/juanmaescudero/react-open-calendar#readme"
+}

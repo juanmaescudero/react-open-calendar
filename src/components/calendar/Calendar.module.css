@@ -3,7 +3,11 @@
     --secondary-color: #edf2fb;
     --primary-text-color: #212529;
     --secondary-text-color: #6c757d;
+    --text-disabled-color: #afb3b7;
     --border-color: #ced4da;
+    --font-small: 12px;
+    --font-regular: 16px;
+    --font-large: 20px;
     padding: 10px; /* TODO TO REMOVE */
 }
 .calendar.month .day {
@@ -15,15 +19,10 @@
 .calendar.day .day{
     flex-basis: 100%;
 }
-.calendar.month .days-of-week {
-    flex-basis: 100%;
-}
-.calendar.month .days-of-week p {
-    flex-basis: 14.28%;
-    text-align: center;
-}
-.days-of-week {
-    display: flex;
+.name-day {
+    font-size: var(--font-small);
+    color: var(--secondary-text-color);
+    margin: 5px 0 0 0;
 }
 .month {
     display: flex;
@@ -39,12 +38,22 @@
     min-height: 120px;
     box-shadow: 1px 1px 0 0 var(--border-color);
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
 }
-.day:hover,
-.day.current:hover {
-    cursor: pointer;
+.day.today .num {
     background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 50%;
 }
-.day.current {
-    background-color: var(--secondary-color);
+.day.prev .num,
+.day.next .num {
+    color: var(--text-disabled-color);
+}
+.day .num {
+    font-size: var(--font-small);
+    margin: 0;
 }
